@@ -1,0 +1,14 @@
+<!--
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.xmy.dao.RenkouMapper" >
+    <resultMap id="renkouMap" type="com.xmy.po.Renkou">
+    <id column="areaId" property="id"/>
+    <result property="lng" column="lng"/>
+    <result property="lat" column="lat"/>
+    <result property="count" column="renkou"/>
+</resultMap>
+    <select id="getAll" resultType="renkouMap">
+        SELECT areaId,lng,lat,renkou FROM T_Area
+    </select>
+</mapper>-->

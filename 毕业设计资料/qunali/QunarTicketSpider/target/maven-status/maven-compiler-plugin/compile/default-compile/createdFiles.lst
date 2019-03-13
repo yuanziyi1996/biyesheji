@@ -1,0 +1,13 @@
+com/xmy/po/PointExample$Criteria.class
+com/xmy/dao/RenkouMapper.class
+com/xmy/dao/PointMapper.class
+com/xmy/po/PointExample$Criterion.class
+com/xmy/controller/IndexController.class
+com/xmy/controller/PointController.class
+com/xmy/po/PointExample$GeneratedCriteria.class
+com/xmy/po/PointExample.class
+com/xmy/po/Renkou.class
+com/xmy/QunarTicketSpiderApplication.class
+com/xmy/service/RenkouService.class
+com/xmy/po/Point.class
+com/xmy/service/PointService.class
