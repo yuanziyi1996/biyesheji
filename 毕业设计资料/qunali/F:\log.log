@@ -9227,3 +9227,31 @@ Caused by: java.lang.NoClassDefFoundError: Could not initialize class com.faster
 2019-04-12 11:27:44.316  INFO 61631 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
 2019-04-12 11:27:44.316  INFO 61631 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
 2019-04-12 11:27:44.339  INFO 61631 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 23 ms
+2019-04-12 11:35:26.697  INFO 61631 --- [Thread-25] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@44e57b58: startup date [Fri Apr 12 11:27:35 CST 2019]; root of context hierarchy
+2019-04-12 11:35:26.730  INFO 61631 --- [Thread-25] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2019-04-12 11:35:36.813  INFO 61741 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6f083fa3: startup date [Fri Apr 12 11:35:36 CST 2019]; root of context hierarchy
+2019-04-12 11:35:39.338  INFO 61741 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-04-12 11:35:40.730  INFO 61741 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2019-04-12 11:35:40.743  INFO 61741 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-04-12 11:35:40.745  INFO 61741 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.20
+2019-04-12 11:35:40.845  INFO 61741 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-04-12 11:35:40.845  INFO 61741 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4037 ms
+2019-04-12 11:35:41.002  INFO 61741 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2019-04-12 11:35:41.008  INFO 61741 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-04-12 11:35:41.009  INFO 61741 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-04-12 11:35:41.009  INFO 61741 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-04-12 11:35:41.009  INFO 61741 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-04-12 11:35:42.000  INFO 61741 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6f083fa3: startup date [Fri Apr 12 11:35:36 CST 2019]; root of context hierarchy
+2019-04-12 11:35:42.064  INFO 61741 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[ || /index]}" onto public java.lang.String com.xmy.controller.IndexController.getIndexPage()
+2019-04-12 11:35:42.066  INFO 61741 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/count],methods=[GET]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.xmy.controller.PointController.getCount()
+2019-04-12 11:35:42.066  INFO 61741 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/get],methods=[GET]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.xmy.controller.PointController.getInfo()
+2019-04-12 11:35:42.067  INFO 61741 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/points]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.xmy.controller.PointController.getPoints()
+2019-04-12 11:35:42.067  INFO 61741 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/renkou],methods=[GET]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.xmy.controller.PointController.getRenkou()
+2019-04-12 11:35:42.071  INFO 61741 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-04-12 11:35:42.072  INFO 61741 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-04-12 11:35:42.106  INFO 61741 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-04-12 11:35:42.106  INFO 61741 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-04-12 11:35:42.149  INFO 61741 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-04-12 11:35:43.013  INFO 61741 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-04-12 11:35:43.088  INFO 61741 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-04-12 11:35:43.199  INFO 61741 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
