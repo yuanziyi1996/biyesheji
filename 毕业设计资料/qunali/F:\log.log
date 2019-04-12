@@ -9046,3 +9046,184 @@ com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'id' i
 2019-01-03 17:37:35.751  INFO 15144 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 24 ms
 2019-01-14 10:05:16.009  INFO 15144 --- [Thread-24] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@201761cc: startup date [Thu Jan 03 17:37:18 CST 2019]; root of context hierarchy
 2019-01-14 10:05:16.739  INFO 15144 --- [Thread-24] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2019-03-14 12:01:39.960  INFO 27155 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@550e39eb: startup date [Thu Mar 14 12:01:39 CST 2019]; root of context hierarchy
+2019-03-14 12:01:41.411  INFO 27155 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-03-14 12:01:43.188  INFO 27155 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2019-03-14 12:01:43.213  INFO 27155 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-03-14 12:01:43.215  INFO 27155 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.20
+2019-03-14 12:01:43.355  INFO 27155 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-03-14 12:01:43.355  INFO 27155 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3395 ms
+2019-03-14 12:01:43.529  INFO 27155 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2019-03-14 12:01:43.537  INFO 27155 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-03-14 12:01:43.537  INFO 27155 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-03-14 12:01:43.538  INFO 27155 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-03-14 12:01:43.538  INFO 27155 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-03-14 12:01:44.837  INFO 27155 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@550e39eb: startup date [Thu Mar 14 12:01:39 CST 2019]; root of context hierarchy
+2019-03-14 12:01:44.932  INFO 27155 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[ || /index]}" onto public java.lang.String com.xmy.controller.IndexController.getIndexPage()
+2019-03-14 12:01:44.934  INFO 27155 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/points]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.xmy.controller.PointController.getPoints()
+2019-03-14 12:01:44.935  INFO 27155 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/renkou],methods=[GET]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.xmy.controller.PointController.getRenkou()
+2019-03-14 12:01:44.936  INFO 27155 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/count],methods=[GET]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.xmy.controller.PointController.getCount()
+2019-03-14 12:01:44.937  INFO 27155 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/get],methods=[GET]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.xmy.controller.PointController.getInfo()
+2019-03-14 12:01:44.941  INFO 27155 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-03-14 12:01:44.942  INFO 27155 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-03-14 12:01:44.992  INFO 27155 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-03-14 12:01:45.000  INFO 27155 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-03-14 12:01:45.050  INFO 27155 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-03-14 12:01:46.042  INFO 27155 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-03-14 12:01:46.104  INFO 27155 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-03-14 12:01:46.210  INFO 27155 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2019-03-14 12:02:07.529  INFO 27155 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-03-14 12:02:07.530  INFO 27155 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2019-03-14 12:02:07.560  INFO 27155 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 30 ms
+2019-03-14 14:44:01.959  INFO 27155 --- [Thread-26] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@550e39eb: startup date [Thu Mar 14 12:01:39 CST 2019]; root of context hierarchy
+2019-03-14 14:44:01.997  INFO 27155 --- [Thread-26] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2019-04-12 11:17:40.579  INFO 61566 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@b185ee7: startup date [Fri Apr 12 11:17:40 CST 2019]; root of context hierarchy
+2019-04-12 11:17:42.646  INFO 61566 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-04-12 11:17:44.648  INFO 61566 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2019-04-12 11:17:44.669  INFO 61566 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-04-12 11:17:44.670  INFO 61566 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.20
+2019-04-12 11:17:44.816  INFO 61566 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-04-12 11:17:44.816  INFO 61566 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4237 ms
+2019-04-12 11:17:44.998  INFO 61566 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2019-04-12 11:17:45.006  INFO 61566 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-04-12 11:17:45.007  INFO 61566 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-04-12 11:17:45.007  INFO 61566 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-04-12 11:17:45.008  INFO 61566 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-04-12 11:17:46.460  INFO 61566 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@b185ee7: startup date [Fri Apr 12 11:17:40 CST 2019]; root of context hierarchy
+2019-04-12 11:17:46.565  INFO 61566 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[ || /index]}" onto public java.lang.String com.xmy.controller.IndexController.getIndexPage()
+2019-04-12 11:17:46.568  INFO 61566 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/get],methods=[GET]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.xmy.controller.PointController.getInfo()
+2019-04-12 11:17:46.569  INFO 61566 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/count],methods=[GET]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.xmy.controller.PointController.getCount()
+2019-04-12 11:17:46.569  INFO 61566 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/points]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.xmy.controller.PointController.getPoints()
+2019-04-12 11:17:46.570  INFO 61566 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/renkou],methods=[GET]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.xmy.controller.PointController.getRenkou()
+2019-04-12 11:17:46.577  INFO 61566 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-04-12 11:17:46.578  INFO 61566 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-04-12 11:17:46.625  INFO 61566 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-04-12 11:17:46.625  INFO 61566 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-04-12 11:17:46.692  INFO 61566 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-04-12 11:17:47.873  INFO 61566 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-04-12 11:17:47.941  INFO 61566 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-04-12 11:17:48.051  INFO 61566 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2019-04-12 11:18:02.649  INFO 61566 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-04-12 11:18:02.651  INFO 61566 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2019-04-12 11:18:02.679  INFO 61566 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 27 ms
+2019-04-12 11:27:06.215  INFO 61566 --- [Thread-30] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@b185ee7: startup date [Fri Apr 12 11:17:40 CST 2019]; root of context hierarchy
+2019-04-12 11:27:06.235  INFO 61566 --- [Thread-30] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2019-04-12 11:27:21.201  INFO 61629 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@14795f56: startup date [Fri Apr 12 11:27:21 CST 2019]; root of context hierarchy
+2019-04-12 11:27:22.675  INFO 61629 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-04-12 11:27:24.444  INFO 61629 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2019-04-12 11:27:24.462  INFO 61629 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-04-12 11:27:24.464  INFO 61629 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.20
+2019-04-12 11:27:24.581  INFO 61629 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-04-12 11:27:24.581  INFO 61629 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3380 ms
+2019-04-12 11:27:24.761 ERROR 61629 --- [localhost-startStop-1] o.s.b.c.embedded.tomcat.TomcatStarter    : Error starting Tomcat context. Exception: org.springframework.beans.factory.BeanCreationException. Message: Error creating bean with name 'httpPutFormContentFilter' defined in class path resource [org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.web.filter.OrderedHttpPutFormContentFilter]: Factory method 'httpPutFormContentFilter' threw exception; nested exception is java.lang.NoClassDefFoundError: Could not initialize class com.fasterxml.jackson.databind.SerializationConfig
+2019-04-12 11:27:24.807  WARN 61629 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start embedded container; nested exception is org.springframework.boot.context.embedded.EmbeddedServletContainerException: Unable to start embedded Tomcat
+2019-04-12 11:27:24.822  INFO 61629 --- [restartedMain] utoConfigurationReportLoggingInitializer : 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2019-04-12 11:27:24.842 ERROR 61629 --- [restartedMain] o.s.boot.SpringApplication               : Application startup failed
+
+org.springframework.context.ApplicationContextException: Unable to start embedded container; nested exception is org.springframework.boot.context.embedded.EmbeddedServletContainerException: Unable to start embedded Tomcat
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.onRefresh(EmbeddedWebApplicationContext.java:137) ~[spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:537) ~[spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) ~[spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at com.xmy.QunarTicketSpiderApplication.main(QunarTicketSpiderApplication.java:14) [classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_181]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_181]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_181]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_181]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+Caused by: org.springframework.boot.context.embedded.EmbeddedServletContainerException: Unable to start embedded Tomcat
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.initialize(TomcatEmbeddedServletContainer.java:123) ~[spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.<init>(TomcatEmbeddedServletContainer.java:84) ~[spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainerFactory.getTomcatEmbeddedServletContainer(TomcatEmbeddedServletContainerFactory.java:554) ~[spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainerFactory.getEmbeddedServletContainer(TomcatEmbeddedServletContainerFactory.java:179) ~[spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.createEmbeddedServletContainer(EmbeddedWebApplicationContext.java:164) ~[spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.onRefresh(EmbeddedWebApplicationContext.java:134) ~[spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	... 13 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'httpPutFormContentFilter' defined in class path resource [org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.web.filter.OrderedHttpPutFormContentFilter]: Factory method 'httpPutFormContentFilter' threw exception; nested exception is java.lang.NoClassDefFoundError: Could not initialize class com.fasterxml.jackson.databind.SerializationConfig
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:599) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1173) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1067) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.getOrderedBeansOfType(ServletContextInitializerBeans.java:234) ~[spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAsRegistrationBean(ServletContextInitializerBeans.java:182) ~[spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAsRegistrationBean(ServletContextInitializerBeans.java:177) ~[spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAdaptableBeans(ServletContextInitializerBeans.java:159) ~[spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.<init>(ServletContextInitializerBeans.java:80) ~[spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.getServletContextInitializerBeans(EmbeddedWebApplicationContext.java:241) ~[spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.selfInitialize(EmbeddedWebApplicationContext.java:228) ~[spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.access$000(EmbeddedWebApplicationContext.java:89) ~[spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext$1.onStartup(EmbeddedWebApplicationContext.java:213) ~[spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.context.embedded.tomcat.TomcatStarter.onStartup(TomcatStarter.java:55) ~[spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5196) ~[tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) ~[tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1419) ~[tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1409) ~[tomcat-embed-core-8.5.20.jar:8.5.20]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[na:1.8.0_181]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) ~[na:1.8.0_181]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) ~[na:1.8.0_181]
+	at java.lang.Thread.run(Thread.java:748) ~[na:1.8.0_181]
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.web.filter.OrderedHttpPutFormContentFilter]: Factory method 'httpPutFormContentFilter' threw exception; nested exception is java.lang.NoClassDefFoundError: Could not initialize class com.fasterxml.jackson.databind.SerializationConfig
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:189) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:588) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	... 26 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: Could not initialize class com.fasterxml.jackson.databind.SerializationConfig
+	at com.fasterxml.jackson.databind.ObjectMapper.<init>(ObjectMapper.java:560) ~[jackson-databind-2.8.10.jar:2.8.10]
+	at com.fasterxml.jackson.databind.ObjectMapper.<init>(ObjectMapper.java:476) ~[jackson-databind-2.8.10.jar:2.8.10]
+	at org.springframework.http.converter.json.Jackson2ObjectMapperBuilder.build(Jackson2ObjectMapperBuilder.java:588) ~[spring-web-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.http.converter.json.MappingJackson2HttpMessageConverter.<init>(MappingJackson2HttpMessageConverter.java:57) ~[spring-web-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.http.converter.support.AllEncompassingFormHttpMessageConverter.<init>(AllEncompassingFormHttpMessageConverter.java:61) ~[spring-web-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.web.filter.HttpPutFormContentFilter.<init>(HttpPutFormContentFilter.java:63) ~[spring-web-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.boot.web.filter.OrderedHttpPutFormContentFilter.<init>(OrderedHttpPutFormContentFilter.java:29) ~[spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration.httpPutFormContentFilter(WebMvcAutoConfiguration.java:149) ~[spring-boot-autoconfigure-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$$EnhancerBySpringCGLIB$$6b4f528e.CGLIB$httpPutFormContentFilter$1(<generated>) ~[spring-boot-autoconfigure-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$$EnhancerBySpringCGLIB$$6b4f528e$$FastClassBySpringCGLIB$$e870f046.invoke(<generated>) ~[spring-boot-autoconfigure-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228) ~[spring-core-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:358) ~[spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$$EnhancerBySpringCGLIB$$6b4f528e.httpPutFormContentFilter(<generated>) ~[spring-boot-autoconfigure-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_181]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_181]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_181]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_181]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:162) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	... 27 common frames omitted
+
+2019-04-12 11:27:35.497  INFO 61631 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@44e57b58: startup date [Fri Apr 12 11:27:35 CST 2019]; root of context hierarchy
+2019-04-12 11:27:37.181  INFO 61631 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-04-12 11:27:38.704  INFO 61631 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2019-04-12 11:27:38.718  INFO 61631 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-04-12 11:27:38.720  INFO 61631 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.20
+2019-04-12 11:27:38.813  INFO 61631 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-04-12 11:27:38.814  INFO 61631 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3317 ms
+2019-04-12 11:27:38.974  INFO 61631 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2019-04-12 11:27:38.980  INFO 61631 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-04-12 11:27:38.981  INFO 61631 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-04-12 11:27:38.981  INFO 61631 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-04-12 11:27:38.981  INFO 61631 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-04-12 11:27:39.928  INFO 61631 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@44e57b58: startup date [Fri Apr 12 11:27:35 CST 2019]; root of context hierarchy
+2019-04-12 11:27:39.991  INFO 61631 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[ || /index]}" onto public java.lang.String com.xmy.controller.IndexController.getIndexPage()
+2019-04-12 11:27:39.993  INFO 61631 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/count],methods=[GET]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.xmy.controller.PointController.getCount()
+2019-04-12 11:27:39.993  INFO 61631 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/get],methods=[GET]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.xmy.controller.PointController.getInfo()
+2019-04-12 11:27:39.994  INFO 61631 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/points]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.xmy.controller.PointController.getPoints()
+2019-04-12 11:27:39.994  INFO 61631 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/renkou],methods=[GET]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.xmy.controller.PointController.getRenkou()
+2019-04-12 11:27:39.998  INFO 61631 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-04-12 11:27:39.999  INFO 61631 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-04-12 11:27:40.034  INFO 61631 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-04-12 11:27:40.035  INFO 61631 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-04-12 11:27:40.076  INFO 61631 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-04-12 11:27:40.841  INFO 61631 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-04-12 11:27:40.903  INFO 61631 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-04-12 11:27:40.984  INFO 61631 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2019-04-12 11:27:44.316  INFO 61631 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-04-12 11:27:44.316  INFO 61631 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2019-04-12 11:27:44.339  INFO 61631 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 23 ms

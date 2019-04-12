@@ -29,3 +29,5 @@ f
 6QunarTicketSpider/src/main/java/com/xmy/po/Renkou.java,a/8/a869cebc04d53fa5c8d3c81cf249d45d8258e9ca
 l
 <QunarTicketSpider/src/main/resources/mapper/RenkouMapper.xml,c/0/c0bbd5d11610a4b090a5ace16a38d723363dc573
+I
+QunarTicketSpider/pom.xml,d/0/d0829b817a13077e10aa2bd24e4e59730b64602b
