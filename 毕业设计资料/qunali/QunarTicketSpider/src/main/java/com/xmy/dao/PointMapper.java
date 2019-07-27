@@ -6,6 +6,7 @@ import org.apache.ibatis.annotations.Param;
 
 import com.xmy.po.Point;
 import com.xmy.po.PointExample;
+import org.apache.ibatis.annotations.Update;
 
 public interface PointMapper {
 	int countByExample(PointExample example);
@@ -29,4 +30,18 @@ public interface PointMapper {
 	int updateByPrimaryKeySelective(Point record);
 
 	int updateByPrimaryKey(Point record);
+
+	@Update("<script>"
+			+ " update "
+		+ " point"
+		+ " <set> "
+		+ " lat =(case when( #{lat} is not null and #{lat} !='') then #{lat} else lat end), "
+		+ " lng =(case when( #{lng} is not null and #{lng} !='') then #{lng} else lng end) "
+		+ " </set>"
+		+ " where id = #{id}"
+		+ "</script>"
+	)
+	int updateArea(@Param("id") long id,
+								 @Param("lat") String lat,
+								 @Param("lng") String lng);
 }

@@ -8,14 +8,14 @@
         <result column="count" property="count" />
     </resultMap>
 <select id="getAll" resultType="hashmap">
-   SELECT id,lng,lat,`count`*10000 as `count` from T_Area
+   SELECT id,lng,lat,`count`*10000 as `count` from point
 </select>
 
     <select id="getInfo" resultMap="RenkouResultMap">
-        SELECT id,lng,lat,`count` from T_Area where parentId = 2
+        SELECT id,lng,lat,`count` from point where parentId = 2
     </select>
 
     <select id="count" resultType="Integer">
-        select  count(*) from T_Area
+        select  count(*) from point
     </select>
 </mapper>

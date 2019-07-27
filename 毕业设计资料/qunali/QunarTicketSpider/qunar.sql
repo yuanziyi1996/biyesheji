@@ -1,23 +1,7 @@
-/*
-Navicat MySQL Data Transfer
-
-Source Server         : 172.27.33.6
-Source Server Version : 50631
-Source Host           : 172.27.33.6:3306
-Source Database       : qunar
-
-Target Server Type    : MYSQL
-Target Server Version : 50631
-File Encoding         : 65001
-
-Date: 2017-10-04 17:15:33
-*/
 
 SET FOREIGN_KEY_CHECKS=0;
 
--- ----------------------------
--- Table structure for point
--- ----------------------------
+
 DROP TABLE IF EXISTS `point`;
 CREATE TABLE `point` (
   `id` varchar(255) NOT NULL,
@@ -27,9 +11,7 @@ CREATE TABLE `point` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
--- ----------------------------
--- Records of point
--- ----------------------------
+
 INSERT INTO `point` VALUES ('1000115497', '118.756662', '30.973353', '0');
 INSERT INTO `point` VALUES ('100011970', '117.958959', '41.022896', '78');
 INSERT INTO `point` VALUES ('1000177185', '89.184089', '29.218762', '0');

@@ -1,25 +1,7 @@
-/*
- Navicat Premium Data Transfer
-
- Source Server         : 我的服务器
- Source Server Type    : MySQL
- Source Server Version : 50724
- Source Host           : 47.112.13.63:3306
- Source Schema         : qunar
-
- Target Server Type    : MySQL
- Target Server Version : 50724
- File Encoding         : 65001
-
- Date: 12/04/2019 11:41:09
-*/
 
 SET NAMES utf8mb4;
 SET FOREIGN_KEY_CHECKS = 0;
 
--- ----------------------------
--- Table structure for T_Area
--- ----------------------------
 DROP TABLE IF EXISTS `T_Area`;
 CREATE TABLE `T_Area` (
   `id` int(20) NOT NULL AUTO_INCREMENT COMMENT '地区Id',
@@ -39,9 +21,7 @@ CREATE TABLE `T_Area` (
   KEY `areaName` (`areaName`)
 ) ENGINE=InnoDB AUTO_INCREMENT=3260 DEFAULT CHARSET=utf8 COMMENT='地区码表';
 
--- ----------------------------
--- Records of T_Area
--- ----------------------------
+
 BEGIN;
 INSERT INTO `T_Area` VALUES (1, '110000', '北京市', 1, '010', '116.407394,39.904211', -1, 1300.00, 116.407394, 39.904211);
 INSERT INTO `T_Area` VALUES (2, '110100', '北京城区', 2, '010', '116.407394,39.904211', 1, 1300.00, 116.407394, 39.904211);

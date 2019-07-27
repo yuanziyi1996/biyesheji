@@ -1,5 +1,7 @@
 package com.xmy.po;
 
+import java.util.Arrays;
+
 public class Renkou {
   private static final long serialVersionUID = 1L;
 
@@ -49,6 +51,12 @@ public class Renkou {
 
   public void setLat(String lat) {
     this.lat = lat;
+    System.out.println("diao set fangfa ");
+    StackTraceElement[] inf0 = Thread.currentThread().getStackTrace();
+    String info = Arrays.toString(inf0);
+    if(!info.contains("ibatis")){
+      System.out.println(info);
+    }
   }
 
   public String getRenkou() {

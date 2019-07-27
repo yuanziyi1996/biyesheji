@@ -31,3 +31,5 @@ l
 <QunarTicketSpider/src/main/resources/mapper/RenkouMapper.xml,c/0/c0bbd5d11610a4b090a5ace16a38d723363dc573
 I
 QunarTicketSpider/pom.xml,d/0/d0829b817a13077e10aa2bd24e4e59730b64602b
+M
+QunarTicketSpider/qunarli.sql,a/8/a878daaa129357a087cc68bbfc643646032abdb8

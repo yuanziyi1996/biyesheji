@@ -1,20 +1,23 @@
 
+ksquid:S4488%"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(³¤è¬ıÿÿÿÿ8èì¯ü -
+U
+squid:S106*"9Replace this use of System.out or System.err by a logger.(üó{8£ÍÒ—-
+[
+squid:S106="9Replace this use of System.out or System.err by a logger.(ËøÇüÿÿÿÿ8£ÍÒ—-
+V
+squid:S1065"9Replace this use of System.out or System.err by a logger.(µˆœÑ8£ÍÒ—-
+[
+squid:S106("9Replace this use of System.out or System.err by a logger.(ËøÇüÿÿÿÿ8£ÍÒ—-
+fsquid:S44880"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(¡³öŸ8èì¯ü -
 nsquid:S1192 "PDefine a constant instead of duplicating this literal "ç»“æŸæ—¶é—´ : " 3 times.(²ëê¤8©¾ó”ÿ,
+V
+squid:S106@"9Replace this use of System.out or System.err by a logger.(²ëê¤8£ÍÒ—-
+V
+squid:S106?"9Replace this use of System.out or System.err by a logger.(ïÈ×8£ÍÒ—-
+V
+squid:S106+"9Replace this use of System.out or System.err by a logger.(²ëê¤8£ÍÒ—-
 V
 squid:S106"9Replace this use of System.out or System.err by a logger.(ÏÈì‚8£ÍÒ—-
 V
 squid:S106 "9Replace this use of System.out or System.err by a logger.(²ëê¤8£ÍÒ—-
-[
-squid:S106("9Replace this use of System.out or System.err by a logger.(ËøÇüÿÿÿÿ8£ÍÒ—-
-U
-squid:S106*"9Replace this use of System.out or System.err by a logger.(üó{8£ÍÒ—-
-V
-squid:S106+"9Replace this use of System.out or System.err by a logger.(²ëê¤8£ÍÒ—-
-V
-squid:S1065"9Replace this use of System.out or System.err by a logger.(µˆœÑ8£ÍÒ—-
-[
-squid:S106="9Replace this use of System.out or System.err by a logger.(ËøÇüÿÿÿÿ8£ÍÒ—-
-V
-squid:S106?"9Replace this use of System.out or System.err by a logger.(ïÈ×8£ÍÒ—-
-V
-squid:S106@"9Replace this use of System.out or System.err by a logger.(²ëê¤8£ÍÒ—-
+fsquid:S4488:"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(°÷ÍÈ8èì¯ü -

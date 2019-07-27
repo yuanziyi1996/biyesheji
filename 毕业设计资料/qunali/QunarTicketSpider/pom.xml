@@ -76,7 +76,24 @@
 			<artifactId>webmagic-extension</artifactId>
 			<version>0.7.3</version>
 		</dependency>
-		
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<version>1.16.22</version>
+		</dependency>
+
+		<dependency>
+			<groupId>io.springfox</groupId>
+			<artifactId>springfox-swagger2</artifactId>
+			<version>2.5.0</version>
+		</dependency>
+		<!-- swagger-ui -->
+		<dependency>
+			<groupId>io.springfox</groupId>
+			<artifactId>springfox-swagger-ui</artifactId>
+			<version>2.5.0</version>
+		</dependency>
+
 	</dependencies>
 
 	<build>
@@ -87,6 +104,8 @@
 			</plugin>
 		</plugins>
 	</build>
+
+
 
 
 </project>
